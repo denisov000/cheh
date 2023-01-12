@@ -81,6 +81,7 @@ main h1{
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -88,6 +89,7 @@ main h1{
     color: #cccccc;
     display: block;
     width: 47%;
+    min-width: 47%;
     text-decoration: none;
     transition: all 0.4s ease;
 }
@@ -107,7 +109,8 @@ main h1{
 
 .game img{
     width: 100%;
-    height: 270px; 
+    height: 270px;
+    border-radius: 10px; 
 
 }
 
@@ -143,4 +146,118 @@ footer{
         height: 200px; 
     }
 
+}
+
+.info{
+    padding: 20px 10px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: #444444;
+}
+
+.info img{
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.info div{
+    padding: 10px;
+}
+
+.info h1{
+    color: orange;
+    text-align: center;
+    font-family: 'Suez One', serif;
+    font-weight: 200;
+}
+
+.info div p{
+    color: #bbbbbb;
+    padding: 0 20px;
+}
+
+.game_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside{
+    width: 20%;
+    margin-right: 10%;    
+}
+
+.topic_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #444444;
+}
+
+.topic_list ul{
+    align-self: center;
+    list-style-type: none;
+    font-family: 'Suez One', serif;
+}
+
+.topic_list ul li{
+    position: relative;
+    line-height: 50px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.topic_list ul li:not(:last-child){
+border-bottom: 2px dashed #aaaaaa;
+}
+
+.topic_list ul li::before{
+    content: "#";
+    position: absolute;
+    color: orange;
+    font-size: 2em;
+    left: -30px;
+}
+
+.topic_list ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.topic_list ul li a:hover{
+    color: #dddddd;
+}
+
+.wall{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post{
+    padding: 10px;
+    margin-bottom: 30px;
+    color: #bbbbbb;
+    background-color: #444444;
+    border-radius: 10px;
+}
+.post_head{
+    font-style:italic;
+    text-align: right;
+}
+
+.post_body{
+    margin: 10px 
+}
+
+.post h2{
+    color: white;
+    margin-bottom: 10px;
 }
