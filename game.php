@@ -1,4 +1,4 @@
-<?php include_once $_SERVER['DOCUMENT_ROOT']."/php/header.php"; ?>
+<?php include_once "/php/header.php"; ?>
 
     <?php $id = $_GET["id"] ?>
 
@@ -60,4 +60,4 @@
             </section>
         </section>
     </main>
-<?php include_once $_SERVER['DOCUMENT_ROOT']."/php/footer.php"; ?>
+<?php include_once "/php/footer.php"; ?>
